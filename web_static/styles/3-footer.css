@@ -6,6 +6,5 @@ footer {
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 0;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #CCCCCC;
 }
