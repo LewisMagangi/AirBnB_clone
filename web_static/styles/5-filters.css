@@ -27,3 +27,23 @@
 .filters button.search-button:hover {
     opacity: 0.9;
 }
+
+.location,
+.amenities {
+    height: 100%;
+    width: 25%;
+    border-right: 1px solid #DDDDDD;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in the total width */
+}
+
+.location h3,
+.amenities h3 {
+    font-weight: 600;
+}
+
+.location h4,
+.amenities h4 {
+    font-weight: 400;
+    font-size: 14px;
+}
