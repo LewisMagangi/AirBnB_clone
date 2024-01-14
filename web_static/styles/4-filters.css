@@ -4,10 +4,11 @@
     width: 100%;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
+    position: relative;
 }
 
 
-.search-button {
+.filters button.search-button {
     font-size: 18px;
     background-color: #FF5A5F;
     color: #FFFFFF;
@@ -23,6 +24,6 @@
     opacity: 1; /* Initial opacity */
 }
 
-.search-button:hover {
+.filters button.search-button:hover {
     opacity: 0.9;
 }
