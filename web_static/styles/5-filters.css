@@ -28,22 +28,22 @@
     opacity: 0.9;
 }
 
-.filters.locations,
-.filters.amenities {
+.location,
+.amenities {
     height: 100%;
     width: 25%;
     border-right: 1px solid #DDDDDD;
     padding: 10px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Include padding in the total width */
 }
 
-.filters.location h3,
-.filters.amenities h3 {
+.location h3,
+.amenities h3 {
     font-weight: 600;
 }
 
-.filters.location h4,
-.filters.amenities h4 {
+.location h4,
+.amenities h4 {
     font-weight: 400;
     font-size: 14px;
 }
