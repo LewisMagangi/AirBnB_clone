@@ -40,10 +40,12 @@
 .location h3,
 .amenities h3 {
     font-weight: 600;
+    margin-bottom: 0px;
 }
 
 .location h4,
 .amenities h4 {
     font-weight: 400;
     font-size: 14px;
+    margin: 4px auto;
 }
