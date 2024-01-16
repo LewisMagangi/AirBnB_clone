@@ -29,25 +29,21 @@
     opacity: 0.9;
 }
 
-/* New updates are below: hover on location and amenities */
-.filters .locations:hover,
-.filters .amenities:hover {
-    background-color: #fafafa;
-}
-
 /* locations and amenities popover */
 .filters .popover {
     background-color: #fafafa;
     border: 1px solid #DDDDDD;
+    border-radius: 4px;
     display: none;
     position: absolute;
-    width: 18%;
+    width: inherit;
 }
 
 /* hover effect on popover */
 .filters .locations:hover .popover,
 .filters .amenities:hover .popover {
     display: block;
+    background-color: #fafafa;
 }
 
 /*locations border style*/
