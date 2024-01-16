@@ -1,67 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AirBnB</title>
-    <link rel="stylesheet" href="styles/4-common.css">
-    <link rel="stylesheet" href="styles/3-header.css">
-    <link rel="stylesheet" href="styles/3-footer.css">
-    <link rel="stylesheet" href="styles/6-filters.css">
-    <link rel="stylesheet" href="styles/7-places.css">
-    <link rel="icon" href="images/icon.png">
-</head>
-
-<body>
-    <header></header>
+  <head>
+    <meta charset="utf-8">
+    <!-- Link to external CSS files -->
+    <link rel="stylesheet" type="text/css" href="styles/4-common.css">
+    <link rel="stylesheet" type="text/css" href="styles/3-header.css">
+    <link rel="stylesheet" type="text/css" href="styles/3-footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/6-filters.css">
+    <link rel="stylesheet" type="text/css" href="styles/7-places.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+	<!-- Your logo content goes here -->
+	<img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/268/logo.png" alt="Logo">
+      </div>
+    </header>
     <div class="container">
+        <!-- Container content goes here -->
         <section class="filters">
+            <!-- Filter section content goes here -->
+            
+            <!-- Button section content goes here -->
+            <button class="search-button">
+                Search
+            </button>
+
+            <!-- Location filters section content goes here -->
             <div class="locations">
                 <h3>States</h3>
-                <h4>ie. New York/ Virginia...</h4>
-                <div class="popover">
-                    <h2>New York:</h2>
-                    <ul>
-                        <li>Buffalo</li>
-                        <li>New York City</li>
-                    </ul>
-                    <h2>Virginia:</h2>
-                    <ul>
-                        <li>Charlottesville</li>
-                        <li>Richmond</li>
-                    </ul>
-                </div>
+                <h4>California, Arizona ...</h4>
+                <ul class="popover">
+                    <h2>Arizona</h2>
+                    <li>Page</li>
+                    <li>Page2</li>
+                    <h2>California</h2>
+                    <li>San Fransisco</li>
+                    <li>Los Angeles</li>
+              </ul>
             </div>
+
+            <!-- Amenities filters section content goes here -->
             <div class="amenities">
-                <h3>amenities</h3>
-                <h4>ie. Laundry/ Internet...</h4>
+                <h3>Amenities</h3>
+                <h4>Internet, Kitchen ...</h4>
                 <ul class="popover">
                     <li>Internet</li>
                     <li>TV</li>
                     <li>Kitchen</li>
-                    <li>Iron</li>
-                </ul>
+                    <li>Loan</li>
+              </ul>
             </div>
-            <button>Search</button>
         </section>
+
         <section class="places">
             <h1>Places</h1>
             <article>
-                <h2>My home</h2>
-            </article>
-            <article>
-                <h2>Tiny place</h2>
-            </article>
-            <article>
-                <h2>A suite</h2>
+                <h2>My Home</h2>
             </article>
         </section>
     </div>
     <footer>
-        Best School
+      Best School
     </footer>
-</body>
-
+  </body>
 </html>
