@@ -38,6 +38,7 @@
 .amenities {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     height: 100%;
     width: 25%;
     padding: 10px;
@@ -48,6 +49,7 @@
 .amenities h3 {
     font-weight: 600;
     margin: auto;
+    text-align: right;
 }
 
 .locations h4,
@@ -55,4 +57,5 @@
     font-weight: 400;
     font-size: 14px;
     margin: auto;
+    text-align: right;
 }
