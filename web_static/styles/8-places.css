@@ -53,8 +53,8 @@
 .places .max_guest,
 .places .number_rooms,
 .places .number_bathrooms {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: normal;
     width: 100px;
 }
 
