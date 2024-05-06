@@ -20,13 +20,13 @@ class BaseModel:
         self.id = str(uuid.uuid4())
 
         # Assigning created_at and updated_at with the current datetime
-        current_datetime = datetime.utcnow()
+        current_datetime = datetime.datetime.now()
         self.created_at = current_datetime
         self.updated_at = current_datetime
 
     def update_timestamp(self):
         # Updating the updated_at timestamp whenever the object is modified
-        self.updated_at = datetime.utcnow()
+        self.updated_at = datetime.datetime.now()
 
     def __str__(self) -> str:
         class_name = self.__class__.__name__
@@ -42,7 +42,7 @@ class BaseModel:
 
     def save(self):
         # Public instance method to update the public instance attribute updated_at with the current datetime
-        self.updated_at = datetime.utcnow()
+        self.updated_at = datetime.datetime.now()
 
     def to_dict(self):
         # A pubic instance method to return a dictionary containing all keys/values of __dict__ of the instance
