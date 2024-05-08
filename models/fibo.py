@@ -15,4 +15,4 @@ def fib2(n):   # return Fibonacci series up to n
         a, b = b, a+b
     return result
 
-print(fib(20))
+print(fib2(20))
