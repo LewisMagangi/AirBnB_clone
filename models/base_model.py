@@ -17,7 +17,7 @@ class BaseModel:
         self.name = name
 
         # Assigning a unique id using uuid.uuid4() and converting it to a string
-        self.id = str(uuid.uuid4())
+        self.id = str(uuid4())
 
         # Assigning created_at and updated_at with the current datetime
         current_datetime = datetime.datetime.now()

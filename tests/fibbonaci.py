@@ -1,5 +1,6 @@
-from models.fibo import fib2, fib
+import sys
+sys.path.append(r"C:\Users\User\Documents\GitHub\AirBnB_clone\models")  # Add the parent directory to the search path
 
-print(fib2(78))
+from fibo import fib, fib2
+
 print(fib(78))
- 
