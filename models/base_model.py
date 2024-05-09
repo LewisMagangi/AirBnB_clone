@@ -4,19 +4,20 @@
 A class BaseModel that defines all common attributes/methods for other classes:
 """
 
+import models
 from uuid import uuid4
 from datetime import datetime
+
 
 class BaseModel:
     """
     A  Public Instance Attributes:
     """
-    
     def __init__(self, name):
         # Public instance attribute
         self.name = name
 
-        # Assigning a unique id using uuid.uuid4() and converting it to a string
+        # Assigning a unique id and converting it to a string
         self.id = str(uuid4())
 
         # Assigning created_at and updated_at with the current datetime
@@ -31,7 +32,7 @@ class BaseModel:
     def __str__(self) -> str:
         class_name = self.__class__.__name__
         return f"[{class_name}] ({self.id}) {self.__dict__}"
-    
+
     """
      A documentation of Public instance methods:
     """
@@ -41,11 +42,11 @@ class BaseModel:
         self.name = name
 
     def save(self):
-        # Public instance method to update the public instance attribute updated_at with the current datetime
+        # Public instance method to update the public instance attribute
         self.updated_at = datetime.datetime.now()
 
     def to_dict(self):
-        # A pubic instance method to return a dictionary containing all keys/values of __dict__ of the instance
+        # A pubic instance method to return a dictionary
         obj_dict = self.__dict__.copy()
         obj_dict['__class__'] = self.__class__.__name__
         obj_dict['created_at'] = self.created_at.isoformat()
