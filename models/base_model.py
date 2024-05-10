@@ -4,7 +4,6 @@
 A class BaseModel that defines all common attributes/methods for other classes:
 """
 
-from .. import models
 from uuid import uuid4
 from datetime import datetime
 
